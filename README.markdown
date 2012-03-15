@@ -1,3 +1,23 @@
+# Why does this fork exist
+
+So you can do: 
+
+
+    Urbanairship.push {
+      :aliases => %W(big long list of aliases), 
+      :message => "This message will be delivered to both android and ios devices"
+    }
+
+
+Instead of this 
+
+    Urbanairship.push {
+      :aliases => %W(big long list of aliases), 
+      :aps => "This goes to ios",
+      :android => "This goes to android"
+    }
+
+
 Urbanairship is a Ruby library for interacting with the [Urban Airship API](http://urbanairship.com).
 
 Installation
